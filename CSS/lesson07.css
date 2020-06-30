@@ -1,0 +1,135 @@
+/*
+COLOR PALETTE
+https://coolors.co/f8e9a1-f76c6c-a8d0e6-374785-24305e
+
+#f8e9a1 Medium Champagne
+#f76c6c Candy Pink
+#a8d0e6 Uranian Blue
+#374785 Dark Cornflower Blue
+#24305e Space Cadet
+*/
+
+/* Global styles
+---------------------------*/
+
+html {
+    box-sizing: border-box;
+}
+*, *:before, *:after {
+    box-sizing: inherit;
+}
+
+body {
+    color: #24305e;
+    margin: 0;
+    padding: 0;
+    font-family: 'Libre Baskerville', serif;
+    font-size: 15px;
+    line-height: 1.5;
+}
+
+img {
+    max-width: 100%;
+    height: auto;
+}
+
+a {
+    color: #f8e9a1;
+}
+
+a:hover {
+    text-decoration: none;
+}
+
+.content-wrap {
+    max-width: 800px;
+    width: 85%;
+    margin: 0 auto;
+    padding: 60px 0;
+}
+
+/* Main Navigation */
+ 
+ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden; 
+    background-color: #374785;
+}
+
+li {
+    float: left;
+}
+
+li a {
+    display: block;
+    color: #f76c6c;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+}
+
+li a:hover {
+    background-color: #f8e9a1;
+}
+
+a {
+    display: block;
+    padding: 8px;
+    background-color: #374785;
+}
+
+.active {
+    background-color: #a8d0e6;
+}
+
+/* Grid */
+
+.wrapper {
+    display: grid;
+    grid-template-columns: auto auto auto;
+    grid-template-rows: auto auto auto;
+    grid-auto-flow: column;
+    grid-auto-columns: auto;
+    grid-template-areas: "img img img";  
+}
+
+.wrapper img {
+    object-fit: cover;
+    width: 100%;
+    max-height: 100%;
+}
+
+footer {
+    color: #a8d0e6;
+    background: #374785;
+}
+.contact-list {
+    list-style-type: none;
+    padding: 0;
+    
+}
+.contact-list a {
+    padding: 15px;
+    display: inline-block;
+}
+
+/* Responsive
+---------------------------*/
+@media screen and (min-width:750px) {
+    header, footer {
+        text-align: center;
+    }
+    
+    .contact-list {
+        display: flex;
+    justify-content: center;
+    }
+}
+@media screen and (max-width:749px) {
+
+   .contact-list a {
+       padding: 5px;
+   }
+}
